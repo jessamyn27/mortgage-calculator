@@ -1,6 +1,15 @@
 # mortgage-calculator
 mortgage calculator challenge: use vanilla js, html, css, sass, custom fonts, airbnb style and es6
 
+### Table of Conents
+- Screenshots in Chrome
+- Acceptance Criteria
+- Bonus
+- Deliverables
+
+### Screenshots in Chrome
+
+
 ### Acceptance Criteria
 - 1. The calculator should match the design
 - 2. The page should be responsive
