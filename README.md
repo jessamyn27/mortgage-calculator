@@ -3,12 +3,21 @@ mortgage calculator challenge: use vanilla js, html, css, sass, custom fonts, ai
 
 ### Table of Conents
 - Screenshots in Chrome
+- Wireframes
 - Acceptance Criteria
 - Bonus
 - Deliverables
 
 ### Screenshots in Chrome
+# ![](images/screenshots/mort-calc-1.png)
+# ![](images/screenshots/mort-calc-2.png)
+# ![](images/screenshots/mort-calc-3.png)
+# ![](images/screenshots/mort-calc-4.png)
 
+### Wireframes
+# ![](images/screenshots/wireframe-1.png)
+# ![](images/screenshots/wireframe-2.png)
+# ![](images/screenshots/wireframe-3.png)
 
 ### Acceptance Criteria
 - 1. The calculator should match the design
