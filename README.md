@@ -18,9 +18,9 @@ mortgage calculator challenge using vanilla js, html, css, sass, custom fonts, a
 # ![](images/screenshots/mort-calc-4.png)
 
 ### Wireframes
-# ![](images/screenshots/wireframe-1.png)
-# ![](images/screenshots/wireframe-2.png)
-# ![](images/screenshots/wireframe-3.png)
+# ![](images/wireframes/wireframe-1.png)
+# ![](images/wireframes/wireframe-2.png)
+# ![](images/wireframes/wireframe-3.png)
 
 ### Bugs and Known Issues
 - Lighter Color in dollar sign before click needs to be implimented
