@@ -1,14 +1,16 @@
 # mortgage-calculator
-mortgage calculator challenge: use vanilla js, html, css, sass, custom fonts, airbnb style and es6
+click here --> http://my-mortgage-calculator.surge.sh/ challenge: use vanilla js, html, css, sass, custom fonts, airbnb style and es6
 
 ### Table of Conents
-- Screenshots in Chrome
+- First Looks - Screenshots in Chrome
 - Wireframes
+- Bugs and Known Issues
+- Next Steps to Continue
 - Acceptance Criteria
 - Bonus
 - Deliverables
 
-### Screenshots in Chrome
+### First Looks - Screenshots in Chrome
 # ![](images/screenshots/mort-calc-1.png)
 # ![](images/screenshots/mort-calc-2.png)
 # ![](images/screenshots/mort-calc-3.png)
@@ -19,7 +21,25 @@ mortgage calculator challenge: use vanilla js, html, css, sass, custom fonts, ai
 # ![](images/screenshots/wireframe-2.png)
 # ![](images/screenshots/wireframe-3.png)
 
-### Acceptance Criteria
+### Bugs and Known Issues
+# Lighter Color in dollar sign before click needs to be implimented
+# Input arrows / focus on click into results fields need to be removed
+# On mobile: hide / show with annimation of results implimented
+# Currency format: indent on comma when $ amt > 999
+
+### Next Steps for App UI and Functionality
+# Slider for Credit Score to estimate average Tax Rate
+# API to Experian / Credit Karma for Credit Score
+# drop down and or link to Taxes and Fees based on State / County / City
+# Pie chart wheel with colors corresponding to P&I / HOA Ins / Taxes
+## Next Steps for Code
+# More responsive and browser compatibility
+# Add more accessibilty
+# test and clean up run time efficiency based on Google Analytics
+# Code Clean up CSS: set up global variables in SCSS for reusables (fonts, colors, headings and other elements ect...)
+# Code Clean up JS: clean up functions / variables further 
+
+### Acceptance Criteria (MVP)
 - 1. The calculator should match the design
 - 2. The page should be responsive
 - 3. Use HTML, JS (ES6 version) and SCSS
