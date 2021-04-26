@@ -2,7 +2,7 @@
 click here --> http://my-mortgage-calculator.surge.sh/ 
 mortgage calculator challenge using vanilla js, html, css, sass, custom fonts, airbnb style and es6
 
-### Table of Conents
+### Table of Contents
 - First Looks - Screenshots in Chrome
 - Wireframes
 - Bugs and Known Issues
@@ -24,7 +24,6 @@ mortgage calculator challenge using vanilla js, html, css, sass, custom fonts, a
 
 ### Bugs and Known Issues
 # Lighter Color in dollar sign before click needs to be implimented
-# Input arrows / focus on click into results fields need to be removed
 # On mobile: hide / show with annimation of results implimented
 # Currency format: indent on comma when $ amt > 999
 
@@ -33,12 +32,13 @@ mortgage calculator challenge using vanilla js, html, css, sass, custom fonts, a
 # API to Experian / Credit Karma for Credit Score
 # drop down and or link to Taxes and Fees based on State / County / City
 # Pie chart wheel with colors corresponding to P&I / HOA Ins / Taxes
+
 ## Next Steps for Code
 # More responsive and browser compatibility
-# Add more accessibilty
-# test and clean up run time efficiency based on Google Analytics
+# Add more accessibilty (label ever form control / alt test / page lang idenity / all interactive elements keyboard accessible like sliders)
+# test and clean up run time efficiency based on Google Analytics (organize acct structure / includes and excludes checklist ect..)
 # Code Clean up CSS: set up global variables in SCSS for reusables (fonts, colors, headings and other elements ect...)
-# Code Clean up JS: clean up functions / variables further 
+# Code Clean up JS: clean up functions / variables further for less code + more ES6
 
 ### Acceptance Criteria (MVP)
 - 1. The calculator should match the design
