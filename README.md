@@ -35,7 +35,7 @@ mortgage calculator challenge using vanilla js, html, css, sass, custom fonts, a
 
 ### Next Steps for Code
 - More responsive and browser compatibility
-- Add more accessibilty (label ever form control / alt test / page lang idenity / all interactive elements keyboard accessible like sliders)
+- Add more accessibility (label ever form control / alt test / page lang idenity / all interactive elements keyboard accessible like sliders)
 - test and clean up run time efficiency based on Google Analytics (organize acct structure / includes and excludes checklist ect..)
 - Code Clean up CSS: set up global variables in SCSS for reusables (fonts, colors, headings and other elements ect...)
 - Code Clean up JS: clean up functions / variables further for less code + more ES6
