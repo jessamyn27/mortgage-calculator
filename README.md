@@ -1,5 +1,6 @@
 # mortgage-calculator
-click here --> http://my-mortgage-calculator.surge.sh/ challenge: use vanilla js, html, css, sass, custom fonts, airbnb style and es6
+click here --> http://my-mortgage-calculator.surge.sh/ 
+mortgage calculator challenge using vanilla js, html, css, sass, custom fonts, airbnb style and es6
 
 ### Table of Conents
 - First Looks - Screenshots in Chrome
