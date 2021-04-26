@@ -23,22 +23,22 @@ mortgage calculator challenge using vanilla js, html, css, sass, custom fonts, a
 # ![](images/screenshots/wireframe-3.png)
 
 ### Bugs and Known Issues
-# Lighter Color in dollar sign before click needs to be implimented
-# On mobile: hide / show with annimation of results implimented
-# Currency format: indent on comma when $ amt > 999
+- Lighter Color in dollar sign before click needs to be implimented
+- On mobile: hide / show with annimation of results implimented
+- Currency format: indent on comma when $ amt > 999
 
 ### Next Steps for App UI and Functionality
-# Slider for Credit Score to estimate average Tax Rate
-# API to Experian / Credit Karma for Credit Score
-# drop down and or link to Taxes and Fees based on State / County / City
-# Pie chart wheel with colors corresponding to P&I / HOA Ins / Taxes
+- Slider for Credit Score to estimate average Tax Rate
+- API to Experian / Credit Karma for Credit Score
+- drop down and or link to Taxes and Fees based on State / County / City
+- Pie chart wheel with colors corresponding to P&I / HOA Ins / Taxes
 
-## Next Steps for Code
-# More responsive and browser compatibility
-# Add more accessibilty (label ever form control / alt test / page lang idenity / all interactive elements keyboard accessible like sliders)
-# test and clean up run time efficiency based on Google Analytics (organize acct structure / includes and excludes checklist ect..)
-# Code Clean up CSS: set up global variables in SCSS for reusables (fonts, colors, headings and other elements ect...)
-# Code Clean up JS: clean up functions / variables further for less code + more ES6
+### Next Steps for Code
+- More responsive and browser compatibility
+- Add more accessibilty (label ever form control / alt test / page lang idenity / all interactive elements keyboard accessible like sliders)
+- test and clean up run time efficiency based on Google Analytics (organize acct structure / includes and excludes checklist ect..)
+- Code Clean up CSS: set up global variables in SCSS for reusables (fonts, colors, headings and other elements ect...)
+- Code Clean up JS: clean up functions / variables further for less code + more ES6
 
 ### Acceptance Criteria (MVP)
 - 1. The calculator should match the design
