@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon/calc-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div>
+            <h1 class="title">Mortgage Calculator</h1>
+            <hr />
+        </div>
+        <div class="float-container">
+            <div class="calculate-container">
+                <h3>Change values to calculate your results</h3>
+                <hr />
+                <div class="years-container">
+                    <h4 class="calc-label">Years of mortgage</h4>
+
+                    <div class="slide-container-1">
+                        <label>1</label>
+                        <input type="range" min="1" max="40" value="20" class="slider" id="myRangeYears" />
+                        <label class="range-max">40</label>
+                        <span class="number" type="text" id="myYearsNumber"></span>
+                    </div>
+                </div>
+                <div class="rate-container">
+                    <h4 class="calc-label">Rate of interest (%)</h4>
+                    <div class="slide-container-2">
+                        <label>0.1</label>
+                        <input type="range" min=".1" max="10" value="5.0" class="slider" step=".01" id="myRangeRate" />
+                        <label class="range-max">10</label>
+                        <span class="number" type="text" id="myRateNumber"></span>
+                    </div>
+                </div>
+                <div class="loan-container">
+                    <h4 class="calc-label">Loan Amount</h4>
+                    <div class="dollar" id="requiredLoanBorder">
+                        <input id="myLoanNumber" autocomplete="on" required />
+                    </div>
+                    <div class="required-text hide" id="requiredLoan">
+                        Mandatory field
+                    </div>
+                </div>
+                <div class="tax-ins-container">
+                    <div class="tax-container">
+                        <h4 class="calc-label">Annual Tax</h4>
+                        <div class="dollar" id="requiredTaxBorder">
+                            <input id="myTaxNumber" autocomplete="on" required />
+                        </div>
+                        <div class="required-text hide" id="requiredTax">
+                            Mandatory field
+                        </div>
+                    </div>
+                    <div class="insurance-container">
+                        <h4 class="calc-label">Annual Insurance</h4>
+                        <div class="dollar" id="requiredInsBorder">
+                            <input type="" id="myInsuranceNumber" autocomplete="on" required />
+                        </div>
+                        <div class="required-text hide" id="requiredIns">
+                            Mandatory field
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="calculate-button" id="calc-btn" onclick="calculatePayment()">
+							Calculate
+						</button>
+                    <button class="recalculate-button hide" id="recalc-btn" onclick="calculatePayment()">
+							Recalculate
+						</button>
+                </div>
+            </div>
+            <div class="results-container">
+                <h2>Your results</h2>
+                <div class="result-label">
+                    <h4>Principle & Interest</h4>
+                    <div class="result-num" id="">
+                        <input type="number" id="myPIresult" class="" name="PIPayment" readonly />
+                    </div>
+                </div>
+                <hr class="mobile-hr" />
+                <div class="result-label">
+                    <h4>Tax</h4>
+                    <div class="result-num" id="">
+                        <input type="number" id="myTaxResult" class="" name="TaxPayment" readonly />
+                    </div>
+                </div>
+                <hr class="mobile-hr" />
+                <div class="result-label">
+                    <h4>Insurance</h4>
+                    <div class="result-num" id="">
+                        <input type="number" id="myInsResult" class="" name="InsPayment" readonly />
+                    </div>
+                </div>
+                <hr class="mobile-hr-tmp" />
+                <div class="result-label tmp">
+                    <h4>Total Monthly Payment</h4>
+                    <div class="result-num">
+                        <input type="number" id="myTMPResult" class="" name="TotalMonthlyPayment" readonly />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=" index.js "></script>
+</body>
+
+</html>

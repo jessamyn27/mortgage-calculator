@@ -1,0 +1,412 @@
+// importing fonts
+@use './fonts/fonts.scss';
+//
+//
+body {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-family: 'Publico Banner';
+}
+
+h2 {
+    font-size: 20px;
+    color: #696969;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin: 10px 0px;
+    @media screen and (max-width: 800px) {
+        font-size: 24px;
+        padding-bottom: 12px;
+    }
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5d5d5d;
+    margin-bottom: 5px;
+    @media screen and (max-width: 800px) {
+        font-size: 16px;
+    }
+}
+
+h1.title {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 13px 0px 8px 0px;
+}
+
+label {
+    font-size: 14px;
+    color: #828282;
+    @media screen and (max-width: 800px) {
+        font-size: 15px;
+    }
+}
+
+h4 {
+    font-size: 13px;
+    margin: 6px 0px;
+    &.calc-label {
+        font-weight: 500;
+        color: #5d5d5d;
+        @media screen and (max-width: 320px) {
+            font-size: 11px;
+        }
+    }
+}
+
+input:focus {
+    outline: none;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid rgb(204, 203, 203);
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    margin: 20px 0px 25px 0px;
+    &.mobile-hr {
+        margin: 3px 0px 13px 0px;
+        @media screen and (min-width: 801px) {
+            visibility: hidden;
+        }
+    }
+    &.mobile-hr-tmp {
+        margin: 0px 0px 20px 0px;
+        @media screen and (min-width: 801px) {
+            margin: 3px 0px 27px 0px;
+        }
+    }
+}
+
+.main-container {
+    padding: 0px 30px 20px 30px;
+    border: 1px solid #ccc;
+    display: block;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 40px auto;
+    @media screen and (max-width: 800px) {
+        height: 1000px;
+        width: 98%;
+        padding: 0px 10px 0px 10px;
+        margin: 0px;
+    }
+}
+
+.float-container {
+    font-family: 'Graphik';
+    padding-top: 5px;
+    margin: 0px 15px 30px 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    height: 511px;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        height: 830px;
+        width: 77%;
+        align-items: center;
+        margin: auto;
+    }
+    @media screen and (max-width: 420px) {
+        width: 100%;
+    }
+}
+
+.calculate-container {
+    flex: 0 0 auto;
+    order: 1;
+    height: 99%;
+    width: 60%;
+    padding: 20px 30px;
+    border: none;
+    box-shadow: 0px 2px 9px 4px #e3e3e3;
+    overflow: hidden;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 0px 30px 24px;
+    border-radius: 7px;
+    z-index: 99999;
+    @media screen and (max-width: 800px) {
+        margin-bottom: 0px;
+        height: 63%;
+        margin: 0px;
+        width: 93%;
+        padding: 10px 15px 10px 15px;
+    }
+    hr {
+        margin-top: 10px;
+    }
+}
+
+.results-container {
+    flex: 1 1 auto;
+    order: 2;
+    height: 85%;
+    padding: 20px 30px;
+    border: none;
+    overflow: hidden;
+    text-align: left;
+    background-color: #eeeeee;
+    margin: 50px 45px 60px 0px;
+    box-sizing: border-box;
+    .result-label {
+        >h4 {
+            color: #909090;
+            font-weight: 400;
+            @media screen and (max-width: 800px) {
+                width: 68%;
+            }
+        }
+        &.tmp {
+            h4 {
+                font-size: 14px;
+            }
+            >.result-num:before {
+                font-size: 23px;
+                font-weight: 500;
+                @media screen and (max-width: 800px) {
+                    font-size: 18px;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                margin-top: 13px;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            flex-direction: row;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .result-num {
+        margin: 6px 0px 24px 0px;
+        &:before {
+            content: '$';
+            font-size: 19px;
+            color: #2b2b2b;
+            left: 0;
+            padding-right: 0;
+            border-right: 0;
+            font-weight: 500;
+            @media screen and (max-width: 800px) {
+                font-size: 15px;
+                text-align: right;
+            }
+        }
+        >input {
+            border: none;
+            max-width: 80%;
+            padding: 0px;
+            box-sizing: border-box;
+            font-size: 19px;
+            background-color: #eeeeee;
+            color: #2b2b2b;
+            font-weight: 600;
+            &#myTMPResult {
+                font-size: 23px;
+                font-weight: 600;
+                @media screen and (max-width: 800px) {
+                    font-size: 18px;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                font-size: 15px;
+                text-align: left;
+                padding-left: 2px;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            margin: 2px 0px 11px 0px;
+            width: 36%;
+            text-align: right;
+            float: right;
+            align-content: flex-end;
+        }
+        @media screen and (max-width: 300px) {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        width: 93%;
+        overflow: visible;
+        margin-top: 0px;
+        margin-left: 24px;
+        height: 65%;
+        margin: 0px;
+        padding: 10px 15px 10px 15px;
+    }
+}
+
+.years-container,
+.rate-container {
+    margin: 20px 0px 20px 0px;
+}
+
+div.slide-container-1 :first-child {
+    margin-right: 12px;
+}
+
+.slide-container-1,
+.slide-container-2 {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    >label {
+        color: #bbbcbc;
+    }
+    .range-max {
+        margin: 0px 5px;
+    }
+    span.number {
+        width: 58px;
+        height: 31px;
+        border: 1px solid #2b2b2b;
+        font-family: 'Graphik';
+        border-radius: 4px;
+        text-align: center;
+        margin: 0px;
+        padding-top: 14px;
+    }
+}
+
+.dollar {
+    border: 1px solid #2b2b2b;
+    padding: 10px 10px 10px 20px;
+    border-radius: 4px;
+    margin: 6px 0px 14px 0px;
+    @media screen and (max-width: 800px) {
+        padding: 10px 5px 10px 10px;
+    }
+    >input {
+        border: none;
+        max-width: 80%;
+        box-sizing: border-box;
+        font-family: 'Graphik';
+        font-size: 14px;
+        color: #2b2b2b;
+    }
+}
+
+.dollar:before {
+    content: '$';
+    font-size: 14px;
+    color: #2b2b2b;
+    left: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.slider {
+    width: 70%;
+    height: 8px;
+    border-radius: 10px;
+    opacity: 0.7;
+    appearance: none;
+    outline: none;
+    background: linear-gradient( to right, #2b2b2b 0%, #2b2b2b 50%, #bbbcbc 50%, #bbbcbc 100%);
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 1px 2px 1px lightgrey;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e9ebe9;
+    cursor: pointer;
+}
+
+.tax-ins-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.tax-container {
+    order: 1;
+    overflow: hidden;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 15px;
+    @media screen and (max-width: 800px) {
+        margin-right: 4px;
+    }
+}
+
+.insurance-container {
+    order: 2;
+    overflow: hidden;
+    align-items: center;
+    margin-left: 15px;
+    box-sizing: border-box;
+    @media screen and (max-width: 800px) {
+        margin-left: 4px;
+    }
+}
+
+.button-container {
+    padding: 3px 0px 20px 0px;
+    .calculate-button,
+    .recalculate-button {
+        height: 40px;
+        width: 100%;
+        background-color: #316eef;
+        color: white;
+        font-size: 18px;
+        border-radius: 20px;
+        border-style: none;
+        &:focus {
+            outline: none;
+            border: 3px solid #8daff6;
+            border-radius: 20px;
+        }
+    }
+}
+
+.required-border {
+    border-color: red;
+    margin-bottom: 1px;
+}
+
+.required-text {
+    color: red;
+    font-size: 10px;
+}
+
+.hide {
+    display: none;
+}

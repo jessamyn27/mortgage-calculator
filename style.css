@@ -1,0 +1,527 @@
+@font-face {
+  font-family: "Publico Banner";
+  src: url("./fonts/PublicoBanner-Black.eot");
+  src: url("./fonts/PublicoBanner-Black.eot?#iefix") format("embedded-opentype"), url("./fonts/PublicoBanner-Black.woff2") format("woff2"), url("./fonts/PublicoBanner-Black.woff") format("woff"), url("./fonts/PublicoBanner-Black.ttf") format("truetype"), url("./fonts/PublicoBanner-Black.svg#PublicoBanner-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Publico Banner";
+  src: url("./fonts/PublicoBanner-Medium.woff2") format("woff2"), url("./fonts/PublicoBanner-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Black.eot");
+  src: url("./fonts/Graphik-Black.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Black.woff2") format("woff2"), url("./fonts/Graphik-Black.woff") format("woff"), url("./fonts/Graphik-Black.ttf") format("truetype"), url("./fonts/Graphik-Black.svg#Graphik-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Light.eot");
+  src: url("./fonts/Graphik-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Light.woff2") format("woff2"), url("./fonts/Graphik-Light.woff") format("woff"), url("./fonts/Graphik-Light.ttf") format("truetype"), url("./fonts/Graphik-Light.svg#Graphik-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Medium.eot");
+  src: url("./fonts/Graphik-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Medium.woff2") format("woff2"), url("./fonts/Graphik-Medium.woff") format("woff"), url("./fonts/Graphik-Medium.ttf") format("truetype"), url("./fonts/Graphik-Medium.svg#Graphik-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Regular.eot");
+  src: url("./fonts/Graphik-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Regular.woff2") format("woff2"), url("./fonts/Graphik-Regular.woff") format("woff"), url("./fonts/Graphik-Regular.ttf") format("truetype"), url("./fonts/Graphik-Regular.svg#Graphik-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Extralight.eot");
+  src: url("./fonts/Graphik-Extralight.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Extralight.woff2") format("woff2"), url("./fonts/Graphik-Extralight.woff") format("woff"), url("./fonts/Graphik-Extralight.ttf") format("truetype"), url("./fonts/Graphik-Extralight.svg#Graphik-Extralight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Thin.eot");
+  src: url("./fonts/Graphik-Thin.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Thin.woff2") format("woff2"), url("./fonts/Graphik-Thin.woff") format("woff"), url("./fonts/Graphik-Thin.ttf") format("truetype"), url("./fonts/Graphik-Thin.svg#Graphik-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Bold.eot");
+  src: url("./fonts/Graphik-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Bold.woff2") format("woff2"), url("./fonts/Graphik-Bold.woff") format("woff"), url("./fonts/Graphik-Bold.ttf") format("truetype"), url("./fonts/Graphik-Bold.svg#Graphik-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-family: "Publico Banner";
+}
+
+h2 {
+  font-size: 20px;
+  color: #696969;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin: 10px 0px;
+}
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 24px;
+    padding-bottom: 12px;
+  }
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5D5D5D;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 800px) {
+  h3 {
+    font-size: 16px;
+  }
+}
+
+h1.title {
+  font-size: 23px;
+  font-weight: 500;
+  margin: 13px 0px 8px 0px;
+}
+
+label {
+  font-size: 14px;
+  color: #828282;
+}
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 15px;
+  }
+}
+
+h4 {
+  font-size: 13px;
+  margin: 6px 0px;
+}
+h4.calc-label {
+  font-weight: 500;
+  color: #5D5D5D;
+}
+@media screen and (max-width: 320px) {
+  h4.calc-label {
+    font-size: 11px;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #cccbcb;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin: 20px 0px 25px 0px;
+}
+hr.mobile-hr {
+  margin: 3px 0px 13px 0px;
+}
+@media screen and (min-width: 801px) {
+  hr.mobile-hr {
+    visibility: hidden;
+  }
+}
+hr.mobile-hr-tmp {
+  margin: 0px 0px 20px 0px;
+}
+@media screen and (min-width: 801px) {
+  hr.mobile-hr-tmp {
+    margin: 3px 0px 27px 0px;
+  }
+}
+
+.main-container {
+  padding: 0px 30px 20px 30px;
+  border: 1px solid #ccc;
+  display: block;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 40px auto;
+}
+@media screen and (max-width: 800px) {
+  .main-container {
+    height: 1000px;
+    width: 98%;
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+  }
+}
+
+.float-container {
+  font-family: "Graphik";
+  padding-top: 5px;
+  margin: 0px 15px 30px 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  height: 511px;
+}
+@media screen and (max-width: 800px) {
+  .float-container {
+    flex-direction: column;
+    height: 830px;
+    width: 77%;
+    align-items: center;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .float-container {
+    width: 100%;
+  }
+}
+
+.calculate-container {
+  flex: 0 0 auto;
+  order: 1;
+  height: 99%;
+  width: 60%;
+  padding: 20px 30px;
+  border: none;
+  box-shadow: 0px 2px 9px 4px #e3e3e3;
+  overflow: hidden;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 10px 0px 30px 24px;
+  border-radius: 7px;
+  z-index: 99999;
+}
+@media screen and (max-width: 800px) {
+  .calculate-container {
+    margin-bottom: 0px;
+    height: 63%;
+    margin: 0px;
+    width: 93%;
+    padding: 10px 15px 10px 15px;
+  }
+}
+.calculate-container hr {
+  margin-top: 10px;
+}
+
+.results-container {
+  flex: 1 1 auto;
+  order: 2;
+  height: 85%;
+  padding: 20px 30px;
+  border: none;
+  overflow: hidden;
+  text-align: left;
+  background-color: #EEEEEE;
+  margin: 50px 45px 60px 0px;
+  box-sizing: border-box;
+}
+.results-container .result-label > h4 {
+  color: #909090;
+  font-weight: 400;
+}
+@media screen and (max-width: 800px) {
+  .results-container .result-label > h4 {
+    width: 68%;
+  }
+}
+.results-container .result-label.tmp h4 {
+  font-size: 14px;
+}
+.results-container .result-label.tmp > .result-num:before {
+  font-size: 23px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .results-container .result-label.tmp > .result-num:before {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .results-container .result-label.tmp {
+    margin-top: 13px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .results-container .result-label {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.results-container .result-num {
+  margin: 6px 0px 24px 0px;
+}
+.results-container .result-num:before {
+  content: "$";
+  font-size: 19px;
+  color: #2B2B2B;
+  left: 0;
+  padding-right: 0;
+  border-right: 0;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .results-container .result-num:before {
+    font-size: 15px;
+    text-align: right;
+  }
+}
+.results-container .result-num > input {
+  border: none;
+  max-width: 80%;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 19px;
+  background-color: #EEEEEE;
+  color: #2b2b2b;
+  font-weight: 600;
+}
+.results-container .result-num > input#myTMPResult {
+  font-size: 23px;
+  font-weight: 600;
+}
+@media screen and (max-width: 800px) {
+  .results-container .result-num > input#myTMPResult {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .results-container .result-num > input {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 2px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .results-container .result-num {
+    margin: 2px 0px 11px 0px;
+    width: 36%;
+    text-align: right;
+    float: right;
+    align-content: flex-end;
+  }
+}
+@media screen and (max-width: 300px) {
+  .results-container .result-num {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .results-container {
+    width: 93%;
+    overflow: visible;
+    margin-top: 0px;
+    margin-left: 24px;
+    height: 65%;
+    margin: 0px;
+    padding: 10px 15px 10px 15px;
+  }
+}
+
+.years-container,
+.rate-container {
+  margin: 20px 0px 20px 0px;
+}
+
+div.slide-container-1 :first-child {
+  margin-right: 12px;
+}
+
+.slide-container-1,
+.slide-container-2 {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.slide-container-1 > label,
+.slide-container-2 > label {
+  color: #BBBCBC;
+}
+.slide-container-1 .range-max,
+.slide-container-2 .range-max {
+  margin: 0px 5px;
+}
+.slide-container-1 span.number,
+.slide-container-2 span.number {
+  width: 58px;
+  height: 31px;
+  border: 1px solid #2B2B2B;
+  font-family: "Graphik";
+  border-radius: 4px;
+  text-align: center;
+  margin: 0px;
+  padding-top: 14px;
+}
+
+.dollar {
+  border: 1px solid #2B2B2B;
+  padding: 10px 10px 10px 20px;
+  border-radius: 4px;
+  margin: 6px 0px 14px 0px;
+}
+@media screen and (max-width: 800px) {
+  .dollar {
+    padding: 10px 5px 10px 10px;
+  }
+}
+.dollar > input {
+  border: none;
+  max-width: 80%;
+  box-sizing: border-box;
+  font-family: "Graphik";
+  font-size: 14px;
+  color: #2b2b2b;
+}
+
+.dollar:before {
+  content: "$";
+  font-size: 14px;
+  color: #2B2B2B;
+  left: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+
+.slider {
+  width: 70%;
+  height: 8px;
+  border-radius: 10px;
+  opacity: 0.7;
+  appearance: none;
+  outline: none;
+  background: linear-gradient(to right, #2b2b2b 0%, #2b2b2b 50%, #BBBCBC 50%, #BBBCBC 100%);
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 1px 2px 1px lightgrey;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #e9ebe9;
+  cursor: pointer;
+}
+
+.tax-ins-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.tax-container {
+  order: 1;
+  overflow: hidden;
+  align-items: center;
+  box-sizing: border-box;
+  margin-right: 15px;
+}
+@media screen and (max-width: 800px) {
+  .tax-container {
+    margin-right: 4px;
+  }
+}
+
+.insurance-container {
+  order: 2;
+  overflow: hidden;
+  align-items: center;
+  margin-left: 15px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+  .insurance-container {
+    margin-left: 4px;
+  }
+}
+
+.button-container {
+  padding: 3px 0px 20px 0px;
+}
+.button-container .calculate-button,
+.button-container .recalculate-button {
+  height: 40px;
+  width: 100%;
+  background-color: #316EEF;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  border-style: none;
+}
+.button-container .calculate-button:focus,
+.button-container .recalculate-button:focus {
+  outline: none;
+  border: 3px solid #8daff6;
+  border-radius: 20px;
+}
+
+.required-border {
+  border-color: red;
+  margin-bottom: 1px;
+}
+
+.required-text {
+  color: red;
+  font-size: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
